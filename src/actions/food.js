@@ -1,11 +1,11 @@
-import { ADD_FOOD, DELETE_FOOD } from "./types";
+import { ADD_TODO, DELETE_TODO } from "./types";
 
-export const  addFood = (food) => ({
-    type: ADD_FOOD,
-    payload: food
+export const addTodo = (todo) => ({
+    type: ADD_TODO,
+    payload: todo
 });
 
-export const  deleteFood = (index) => ({
-    type: DELETE_FOOD,
-    payload: index
+export const deleteTodo = (index) => ({
+    type: DELETE_TODO,
+    payload: index,
 });

@@ -3,11 +3,17 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import NavBar from './Navbar/NavFile';
+import NavOne from './Navbar/NavOne';
+import ApiDataLearn from './components/ApiDataLearn';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
-    {/* <TodoWithRedux /> */}
+    {/* <App /> */}
+    {/* <NavBar /> */}
+    {/* <NavOne /> */}
+    <ApiDataLearn />
   </React.StrictMode>,
   document.getElementById('root')
 );
