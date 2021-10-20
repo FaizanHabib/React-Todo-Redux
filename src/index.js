@@ -7,13 +7,18 @@ import NavBar from './Navbar/NavFile';
 import NavOne from './Navbar/NavOne';
 import ApiDataLearn from './components/ApiDataLearn';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import OperatorsRef from './components/OpretorsRef';
+import SlideJavaScript from './Navbar/slide';
+import { SliderData } from './Navbar/SliderData';
 
 ReactDOM.render(
   <React.StrictMode>
     {/* <App /> */}
     {/* <NavBar /> */}
     {/* <NavOne /> */}
-    <ApiDataLearn />
+    {/* <ApiDataLearn /> */}
+    {/* <OperatorsRef /> */}
+    <SlideJavaScript slides={SliderData} />
   </React.StrictMode>,
   document.getElementById('root')
 );

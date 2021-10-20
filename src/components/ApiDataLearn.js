@@ -6,9 +6,11 @@ class ApiDataLearn extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            dataSource: [], loading: false
+            dataSource: [],
+            loading: false,
         };
     };
+
 
     async componentDidMount() {
         await this.setState({ loading: true })
@@ -43,13 +45,23 @@ class ApiDataLearn extends Component {
                 {
                     this.state.dataSource.map((item, index) => (
                         <div key={index}>
-                          <div>
-                             <span className="dataapi">No: {item.id} </span> <br />
-                             <span><span className="dataapi">Name:</span> {item.name} </span> <br />
-                             <span>Email: {item.email} </span> <br />
-                             <span>Phone: {item.phone} </span>  <br />
-                             <span>Website: {item.website} </span> <br />
-                          </div>
+                            <div>
+                                <span className="dataapi">No: {item.id} </span> <br />
+                                <span><span className="dataapi">Name:- </span> {item.name} </span> <br />
+                                <span><span className="dataapi">Email:- </span> {item.email} </span> <br />
+                                <span><span className="dataapi">Phone:- </span> {item.phone} </span>  <br />
+                                <span><span className="dataapi">Website:- </span> {item.website} </span> <br />
+                                <span><span className="dataapi">Address:- </span> 
+                                {item.address.street}, &#160;
+                                {item.address.suite}, &#160;
+                                {item.address.city}, &#160;
+                                {item.address.zipcode}</span> <br />
+                                <span><span className="dataapi">Company Name:- </span> {item.company.name} </span> <br />
+                                <span><span className="dataapi">Company Description:- </span> {item.company.catchPhrase} </span> <br />
+                                <span><span className="dataapi">Company Service:- </span> {item.company.bs} </span> <br />
+                                <hr />
+
+                            </div>
                         </div>
                     ))
                 }
